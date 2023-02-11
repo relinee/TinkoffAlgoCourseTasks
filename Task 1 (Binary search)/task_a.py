@@ -1,4 +1,4 @@
-def task_a(arr, x):
+def binary_search(arr, x):
     l = -1
     r = len(arr)
     while l + 1 < r:
@@ -19,4 +19,4 @@ if __name__ == '__main__':
     arr = list(map(int, input().split()))
     arr_elem = list(map(int, input().split()))
     for i in range(k):
-        task_a(arr, arr_elem[i])
+        binary_search(arr, arr_elem[i])
