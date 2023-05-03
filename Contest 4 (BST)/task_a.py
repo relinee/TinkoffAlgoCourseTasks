@@ -1,5 +1,5 @@
 import random
-
+# TODO: Добавить решение задания B
 
 class Node:
     def __init__(self, x):
