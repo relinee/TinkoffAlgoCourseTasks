@@ -52,7 +52,7 @@ def find(node, x):
 
 
 def update_sum_branch(self):
-    self.sum_branch = self.value
+    self.sum_branch = self.val
     if self.left is not None:
         self.sum_branch += self.left.sum_branch
     if self.right is not None:
@@ -86,8 +86,8 @@ if __name__ == '__main__':
         queries.append(input())
     dTree = Tree()
     last_sum = 0
-    for str in queries:
-        query = str.split(" ")
+    for str_i in queries:
+        query = str_i.split(" ")
         if query[0] == '+':
             query[1] = (int(query[1]) + last_sum) % (10 ** 9)
             last_sum = 0

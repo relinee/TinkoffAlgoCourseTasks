@@ -1,4 +1,6 @@
 import sys
+
+
 def prefix_polynomial_hash(str, k, mod):
     h = [0] * (len(str) + 1)
     p = [1] * (len(str) + 1)
@@ -27,6 +29,7 @@ def is_equal(m, pref_hash_s, pref_hash_subs, pow_mass, mod, a):
             else:
                 return False
     return True
+
 
 if __name__ == '__main__':
     mod = 10 ** 9 + 9

@@ -1,9 +1,9 @@
-def palindrom_create(a: list[str]):
+def palindrome_create(a: list[str]):
     a = sorted(a)
     i = 0
     res = ""
     center = ""
-    while (i + 1 < len(a)):
+    while i + 1 < len(a):
         if a[i] == a[i + 1]:
             res += a[i]
             i += 2
@@ -23,6 +23,6 @@ def palindrom_create(a: list[str]):
 if __name__ == '__main__':
     n = int(input())
     a = list(input().rsplit()[0])
-    print(palindrom_create(a))
+    print(palindrome_create(a))
 
 

@@ -2,7 +2,7 @@ from collections import deque
 
 n = int(input())
 q1 = deque()
-q2  = deque()
+q2 = deque()
 for _ in range(n):
     inpt = input().split()
     if inpt[0] == "+":

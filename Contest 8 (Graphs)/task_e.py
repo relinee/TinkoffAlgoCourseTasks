@@ -1,5 +1,6 @@
 import sys
 
+
 def top_sort():
     top_srt = []
     used = [False] * n

@@ -1,11 +1,11 @@
-def min_cost(cost_mass):
-    n = len(cost_mass)
+def min_cost(costs):
+    n = len(costs)
     if n == 1:
-        return cost_mass[0]
+        return costs[0]
     dp = [0]*n
-    dp[0], dp[1] = cost_mass[0], cost_mass[1]
+    dp[0], dp[1] = costs[0], costs[1]
     for i in range(2, n):
-        dp[i] = min(dp[i - 1], dp[i - 2]) + cost_mass[i]
+        dp[i] = min(dp[i - 1], dp[i - 2]) + costs[i]
     return dp[n - 1]
 
 

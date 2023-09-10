@@ -1,4 +1,6 @@
 from collections import deque
+
+
 def sort_wagons(n: int, arr: list[int]):
     deadlock_stack = deque()
     track_2 = deque()

@@ -1,5 +1,5 @@
 
-def count_itteration_in_sort(n: int, arr_ind: list[int]):
+def count_iteration_in_sort(n: int, arr_ind: list[int]):
     print(1, end=' ')
     a = [0 for _ in range(n)]
     left_border = -1
@@ -30,4 +30,4 @@ def count_itteration_in_sort(n: int, arr_ind: list[int]):
 if __name__ == '__main__':
     n = int(input())
     arr_ind = list(map(int, input().split()))
-    count_itteration_in_sort(n, arr_ind)
+    count_iteration_in_sort(n, arr_ind)

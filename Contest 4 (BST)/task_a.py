@@ -1,4 +1,6 @@
 import random
+
+
 # TODO: Добавить решение задания B
 
 class Node:
@@ -56,18 +58,16 @@ class Tree:
         l, r = split(self.root, value)
         self.root = merge(merge(l, Node(value)), r)
 
-
     def next(self, value):
         node = self.root
         result = -1
         while node is not None:
-            if node.value >= value:
-                result = node.value
+            if node.val >= value:
+                result = node.val
                 node = node.left
             else:
                 node = node.right
         return result
-
 
 
 if __name__ == '__main__':
